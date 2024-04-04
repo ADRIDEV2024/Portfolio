@@ -31,5 +31,10 @@ def withdraw (cardholder):
     except Exception as error :
         print("Invalid input", error)
         
-def check_balance():
+def check_balance(cardholder):
+    print("Your current balance: ", cardholder.get_balance())
+    
+
+if __name__ == "__main__":
+    current_user = cardholder("","","","","")
         
