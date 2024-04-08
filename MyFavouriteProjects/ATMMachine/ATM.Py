@@ -37,4 +37,25 @@ def check_balance(cardholder):
 
 if __name__ == "__main__":
     current_user = cardholder("","","","","")
+    
+# CREATE A LIST OF CARDHOLDERS WITH CARDNUM,PIN,FIRSTNAME,
+# LASTNAME AND A BALANCE
+list_cardholders = []
+list_cardholders.append(cardholder("123456787654", 4321, "Jonh", "Pitt", 280.50 ))
+list_cardholders.append(cardholder("223456787655", 1234, "Alejandro", "Gonzalez", 90.50 ))
+list_cardholders.append(cardholder("123456787654", 5521, "Anna", "Smith", 0.00 ))
+list_cardholders.append(cardholder("123456787654", 4321, "Jonhy", "Depp", 57,280.50 ))
+
+# PROMPT USER FOR DEBIT CARD NUMBER 
+debitCardNum = ""
+
+while True:
+    try:
+       debitCardNum= input("Please,insert your debit card: ")
+       cardMatch= [holder for holder in list_cardholders if holder.cardNum == debitCardNum]
+       if (len(cardMatch) > 0):
+           current_user = cardMatch[0]
+           break
+    except Exception :
+        print("Card number not recognized. Please try again ")
         
