@@ -29,6 +29,11 @@ print(answer)
 
 level = input("Chosse level dificulty...type <<easy>> or <<hard>>: ")
 attempts = level_dificulty(level)
-print(f"You have {attempts}remaining to guess my number.")
-guess_number = input(int("Guess a number: "))
+while guess_number != answer:
 
+    print(f"You have {attempts}remaining to guess my number.")
+    guess_number = input(int("Guess a number: "))
+    answer= check_answer(guess_number,answer,attempts)
+
+if attempts == 0:
+    print("Sorry,your time to guess has finish. You lose :( ")
