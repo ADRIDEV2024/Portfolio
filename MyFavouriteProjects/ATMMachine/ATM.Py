@@ -51,8 +51,8 @@ debitCardNum = ""
 
 while True:
     try:
-       debitCardNum= input("Please,insert your debit card: ")
-       cardMatch= [holder for holder in list_cardholders if holder.cardNum == debitCardNum]
+       debitCardNum = input("Please,insert your debit card: ")
+       cardMatch = [holder for holder in list_cardholders if holder.cardNum == debitCardNum]
        if (len(cardMatch) > 0):
            current_user = cardMatch[0]
            break

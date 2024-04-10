@@ -7,7 +7,7 @@ def convert_currency():
     while True:
     
      try:
-      amount= float(input("Enter the amount: "))
+      amount = float(input("Enter the amount: "))
         
      except TypeError:
         print("Sorry, the amount needs to be numeric")
@@ -18,14 +18,14 @@ def convert_currency():
      else:
          break
     
-url= "https://api.apilayer.com/fixer/convert?to={to}&from={from}&amount={amount}"
+url = "https://api.apilayer.com/fixer/convert?to={to}&from={from}&amount={amount}"
 
-Payload= {}
-header={
+Payload = {}
+header = {
 "apikey: 9sSG7LPikh55WQQli023V8LipQI43"  
 } 
-response= req.request("GET", url, header=header, data= Payload)
-status_code= response.status_code
+response = req.request("GET", url, header=header, data= Payload)
+status_code = response.status_code
  
  # CHECK IF WE HAVE A PROBLEM WITH GET REQUEST    
 if status_code != 200:

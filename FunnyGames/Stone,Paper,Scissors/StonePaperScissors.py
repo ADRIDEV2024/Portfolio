@@ -1,9 +1,9 @@
 import random
 
 def play():
- player1 =input("Choose an option: stone, paper or scissors.\n").lower()
+ player1 = input("Choose an option: stone, paper or scissors.\n").lower()
  
- computer= print(random.choice(["stone","paper","scissors"]))
+ computer = print(random.choice(["stone","paper","scissors"]))
  
  if player1 == computer :
       return "¡Tie!"
