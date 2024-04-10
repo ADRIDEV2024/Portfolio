@@ -9,6 +9,6 @@ context = CryptContext(
 
 password = "name_234?-!"
 
-cipher_password = context.encrypt(password)
+cipher_password = context.hash(password)
 print(cipher_password)
 
