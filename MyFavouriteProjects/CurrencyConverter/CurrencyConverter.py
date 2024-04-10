@@ -26,7 +26,8 @@ header={
 } 
 response= req.request("GET", url, header=header, data= Payload)
 status_code= response.status_code
-    
+ 
+ # CHECK IF WE HAVE A PROBLEM WITH GET REQUEST    
 if status_code != 200:
     response = response.json()
     print("Error response" + str(response))
