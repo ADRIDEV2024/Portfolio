@@ -40,7 +40,6 @@ def play():
 
         if attempts == 0:
             print("Sorry,your time to guess has finish. You lose :( ")
-            return
 
         elif guess_number != answer:
             print("Guess again")
