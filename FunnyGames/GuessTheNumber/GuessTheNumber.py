@@ -38,10 +38,10 @@ def play():
             guess_number = input(int("Guess a number: "))
             answer= check_answer(guess_number,answer,attempts)
 
-        if attempts == 0:
-            print("Sorry,your time to guess has finish. You lose :( ")
+            if attempts == 0:
+                print("Sorry,your time to guess has finish. You lose :( ")
 
-        elif guess_number != answer:
-            print("Guess again")
+            elif guess_number != answer:
+                print("Guess again")
 
 play()
