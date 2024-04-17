@@ -12,7 +12,7 @@ import re
 
 
 
-def parse(text: str):
+def parse(text: str) -> str:
 
     words_count = 0
     letter_count = 0
