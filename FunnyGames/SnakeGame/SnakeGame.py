@@ -36,6 +36,14 @@ while True:
      # Draw snake
     [py.draw.rect(screen, "green", segments) for segment in segments]
     
+    # Check borders and selfeating
+    self_eating = py.Rect.collidelist(snake, segments[:-1])!= -1
+    # Draw food 
+    py.draw.rect(screen, "red",food) 
+    # Check food position in window
+    if snake.center == food.center:
+        food.center = get_random_position()
+        length += 1
     # Move snake 
     time_now = py.time.get_ticks()
     if time_now - time > time_step:
