@@ -8,8 +8,9 @@ get_random_position = lambda : [randrange(*RANGE), randrange(*RANGE)]
 snake = py.Rect([0,0, TILE_SIZE-2, TILE_SIZE-2])
 snake.center = get_random_position()
 screen = py.display.set_mode([WINDOW]*2)
-time = py.time.Clock()
+time_clock = py.time.Clock()
 time, time_step = 0, 100 # Speed control for my snake 
+dirs = {py.K_w:1, py.K_a:1, py.K_d:1, py.K_s:1}
 length = 1 
 segments = [snake.copy()]
 snake_dir = (0,0) # These values shows the snake x, y location cordinates on every movement
@@ -22,13 +23,13 @@ while True:
         if event.type == py.QUIT:
             exit()
         elif event.type == py.KEYDOWN: 
-             if event.key == py.K_w:
+             if event.key == py.K_w and dirs[py.K_w]:
                  snake_dir = (0, -TILE_SIZE)
-             if event.key == py.K_s:
+             if event.key == py.K_s and dirs[py.K_s]:
                  snake_dir = (0, TILE_SIZE)
-             if event.key == py.K_a:
+             if event.key == py.K_a and dirs[py.K_a]:
                  snake_dir = (-TILE_SIZE, 0)
-             if event.key == py.K_d:
+             if event.key == py.K_d and dirs[py.K_d]:
                  snake_dir = (TILE_SIZE, 0)
             
             
@@ -38,6 +39,10 @@ while True:
     
     # Check borders and selfeating
     self_eating = py.Rect.collidelist(snake, segments[:-1])!= -1
+    if snake.right > WINDOW or snake.left < 0 or snake.top < 0 or snake.bottom > WINDOW or self_eating:
+        snake.center, food.center = get_random_position(), get_random_position()
+        length, snake_dir = 1, (0,0)
+        segments = [snake.copy()]
     # Draw food 
     py.draw.rect(screen, "red",food) 
     # Check food position in window
