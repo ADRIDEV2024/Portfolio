@@ -16,11 +16,11 @@ def check_answer(user_guess:str,correct_answer:str):
 for question in range(len(QA.questions)):
  print("*************************")
  print(QA.questions[question]["Question"])
- for i in QA.options :
+ for i in QA.options[QA.questions] :
      print(i)
      
 score = 0
-guess = input("Enter the answer (A,B,C or D)").upper()
+guess = input("Enter the answer (A,B,C or D): ").upper()
 is_correct = check_answer(guess,[QA.questions]["Answer"])
 if is_correct:
     print("Correct!")
