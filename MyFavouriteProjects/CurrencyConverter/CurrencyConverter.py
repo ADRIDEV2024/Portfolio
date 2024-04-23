@@ -1,16 +1,16 @@
 import requests as req
 
 def convert_currency():
-    initial_currency = input("Enter your initial currency : ")
-    target_currency = input("Enter your target currency : ")
+    initial_currency = input("\nEnter your initial currency : \n")
+    target_currency = input("Enter your target currency :\n ")
     
     while True:
     
      try:
-      amount = float(input("Enter the amount: "))
+      amount = float(input("Enter the amount: \n"))
         
      except TypeError:
-        print("Sorry, the amount needs to be numeric")
+        print("Sorry, the amount needs to be numeric\n")
     
      if not amount>0:
          print("Sorry, the amount needs to be greater than 0")
