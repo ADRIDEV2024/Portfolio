@@ -35,7 +35,7 @@ while True:
             
     screen.fill("black")
      # Draw snake
-    [py.draw.rect(screen, "green", segments) for segment in segments]
+    [py.draw.Rect(screen, "green", segments) for segment in segments]
     
     # Check borders and selfeating
     self_eating = py.Rect.collidelist(snake, segments[:-1])!= -1
@@ -44,7 +44,7 @@ while True:
         length, snake_dir = 1, (0,0)
         segments = [snake.copy()]
     # Draw food 
-    py.draw.rect(screen, "red",food) 
+    py.draw.Rect(screen, "red",food) 
     # Check food position in window
     if snake.center == food.center:
         food.center = get_random_position()
