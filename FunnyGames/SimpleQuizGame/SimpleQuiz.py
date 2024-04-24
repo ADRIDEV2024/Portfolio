@@ -21,7 +21,7 @@ for question in range(len(QA.questions)):
      
 score = 0
 guess = input("Enter the answer (A,B,C or D): ").upper()
-is_correct = check_answer(guess,[QA.questions]["Answer"])
+is_correct = check_answer(guess,[QA.questions],["Answer"])
 if is_correct:
     print("Correct!")
     score+=1

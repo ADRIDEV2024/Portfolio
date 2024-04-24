@@ -16,7 +16,7 @@ options = [["A. Float", "B. Char", "C. Bool", "D. List"],
             "D. Install Java frameworks and libraries"],
            ["A. Is a style guide that helps you to write better code in Python", 
             "B. A VSCode extension used as a chatbot","C. One of the latest Python interpreter",
-            "D. Is a PHP IDE"]
+            "D. Is a PHP IDE"],
            ["A. A buit-in function for Python 2.0", "B. Is a Machine-Learning alghoritm", 
             "C. Is one of the common  methods used in JavaScript classes", 
             "D. Functions in Python  that extends the behavior of another function without modifying it directly "]
