@@ -8,6 +8,7 @@ SOCIAL MEDIA & CONTACT :
 ![LINKEDIN](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
 ![INSTA](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)
 
+![ADRIDEV's GitHub stats](https://github-readme-stats.vercel.app/api?username=ADRIDEV2024&show_icons=true)
 (www.instagram.com/adrian_10gomis)
 (https://www.linkedin.com/in/gomisadrian)
 
