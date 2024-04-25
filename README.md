@@ -29,6 +29,41 @@ Python es el mejor lenguaje para mí en este momento, y he hecho muchos proyecto
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ADRIDEV2024&layout=donut)](https://github.com/anuraghazra/github-readme-stats)
 
+export const themes = {
+  default: {
+    title_color: "2f80ed",
+    icon_color: "4c71f2",
+    text_color: "434d58",
+    bg_color: "fffefe",
+    border_color: "e4e2e2",
+  },
+  default_repocard: {
+    title_color: "2f80ed",
+    icon_color: "586069", // icon color is different
+    text_color: "434d58",
+    bg_color: "fffefe",
+  },
+  transparent: {
+    title_color: "006AFF",
+    icon_color: "0579C3",
+    text_color: "417E87",
+    bg_color: "ffffff00",
+  },
+  shadow_red: {
+    title_color: "9A0000",
+    text_color: "444",
+    icon_color: "4F0000",
+    border_color: "4F0000",
+    bg_color: "ffffff00",
+  },
+  shadow_green: {
+    title_color: "007A00",
+    text_color: "444",
+    icon_color: "003D00",
+    border_color: "003D00",
+    bg_color: "ffffff00",
+  },
+
 PYTHON PROJECTS :
 
 |[ CURRENCYCONVERTER](MyFavouriteProjects/CurrencyConverter) |     |[ ATMMACHINE](MyFavouriteProjects/ATMMachine) |
