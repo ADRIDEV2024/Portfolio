@@ -5,8 +5,9 @@
 SOCIAL MEDIA & CONTACT :
 
 ![GMAIL](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
-![LINKEDIN](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)![LINKEDIN](https://www.linkedin.com/in/gomisadrian)
-![INSTA](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)![INSTA](www.instagram.com/adrian_10gomis)
+![LINKEDIN]((https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)(https://www.linkedin.com/in/gomisadrian))
+![INSTA]((https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)![INSTA](www.instagram.com/adrian_10gomis))
+
 Hi everyone!🙋‍♂️ My name is Adrian,I´m from Spain and I´m an autodidact junior programmer that have learning and practising programming concepts since two years to now. Python is the best language for me at this moment, and I did too many simple and medium level Python projects, some of them you will see in my Github repositories. Programming is the best relaxing practise for me to relax and learn wonderful things. Please take a look to my projects if you are a great programmer😎❤.
 
 Hola a todos!🙋‍♂️ Mi nombre es Adrián, vengo de España y soy un programador junior autodidacta que lleva aprendiendo y practicando conceptos de programación desde hace dos años hasta ahora. 
