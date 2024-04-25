@@ -7,3 +7,15 @@ Hi everyone!🙋‍♂️ My name is Adrian,I´m from Spain and I´m an autodida
 
 Hola a todos!🙋‍♂️ Mi nombre es Adrián, vengo de España y soy un programador junior autodidacta que lleva aprendiendo y practicando conceptos de programación desde hace dos años hasta ahora. 
 Python es el mejor lenguaje para mí en este momento, y he hecho muchos proyectos sencillos y de nivel medio en Python, algunos de ellos los podréis ver en mis repositorios de Github. La programación es la mejor práctica para relajarme y aprender cosas maravillosas. Por favor, echa un vistazo a mis proyectos si eres un gran programador😎❤.
+
+     SKILLS/KNOWLEADGE: 
+    
+     - PYTHON
+     - DJANGO
+     - BASIC OF HTML
+     - SQL
+     - RESTFUL APIS
+     - FASTAPI
+     - NUMPY 
+     - PANDAS
+     - EXCEL 
