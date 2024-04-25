@@ -29,7 +29,7 @@ Python es el mejor lenguaje para mí en este momento, y he hecho muchos proyecto
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ADRIDEV2024&layout=donut)](https://github.com/anuraghazra/github-readme-stats)
 
-![ADRIDEV GitHub stats](https://github-readme-stats.vercel.app/api?username=ADRIDEV2024&show_icons=true&theme=gruvbox)
+![ADRIDEV GitHub stats](https://github-readme-stats.vercel.app/api?username=ADRIDEV2024&show_icons=true&theme=github-dark-dimmed)
 
  PYTHON PROJECTS :
 
