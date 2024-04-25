@@ -1,5 +1,5 @@
 
-![IMAGEDATA](/.github/Portfolio/Images/Readme.jpg?raw=True "IMAGE"
+
 
 Hi everyone!🙋‍♂️ My name is Adrian,I´m from Spain and I´m an autodidact junior programmer that have learning and practising programming concepts since two years to now.
 Python is the best language for me at this moment, and I did too many simple and medium level Python projects, some of them you will see in my Github repositories. 
