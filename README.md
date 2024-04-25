@@ -29,8 +29,9 @@ Python es el mejor lenguaje para mí en este momento, y he hecho muchos proyecto
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ADRIDEV2024&layout=donut)](https://github.com/anuraghazra/github-readme-stats)
 
-![ADRIDEV GitHub stats](https://github-readme-stats.vercel.app/api?username=ADRIDEV2024&show_icons=true&theme=radical)
-PYTHON PROJECTS :
+![ADRIDEV GitHub stats](https://github-readme-stats.vercel.app/api?username=ADRIDEV2024&show_icons=true&theme=tokionight)
+
+ PYTHON PROJECTS :
 
 |[ CURRENCYCONVERTER](MyFavouriteProjects/CurrencyConverter) |     |[ ATMMACHINE](MyFavouriteProjects/ATMMachine) |
 
