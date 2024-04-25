@@ -29,5 +29,7 @@ Python es el mejor lenguaje para mí en este momento, y he hecho muchos proyecto
 
 PYTHON PROJECTS :
 
-|[ CURRENCYCONVERTER](MyFavouriteProjects/CurrencyConverter) |
+|[ CURRENCYCONVERTER](MyFavouriteProjects/CurrencyConverter) |     |[ ATMMACHINE](MyFavouriteProjects/ATMMachine) |
+
+| PASSWORD-ENCRYPTER |       | WHEATHER-API | 
 
