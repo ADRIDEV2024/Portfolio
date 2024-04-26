@@ -1,7 +1,6 @@
 
 
-![IMAGEREPO](![image](https://github.com/ADRIDEV2024/Portfolio/assets/163412333/c408c0ee-e4a6-4178-8150-d2e97f90fd7b)
-)
+![IMAGEREPO](https://github.com/ADRIDEV2024/Portfolio/assets/163412333/82a2efdc-114c-4727-9b94-7fc043ace81e)
 
 SOCIAL MEDIA & CONTACT :
 
