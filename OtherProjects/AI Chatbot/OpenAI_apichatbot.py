@@ -1,20 +1,32 @@
 import openai
 import openai.cli
 import config
+import typer 
 
 
-openai.api_key = config.api_key
-
-while True:
+def main() -> str:
     
+        openai.api_key = config.api_key
 
-     messages = [{"Role":"System", "Context":"You are very smart AI"}]
-     context = input("Hello, I´m your AI assistant,I´d love to interact with you")
+        messages = [{"Role":"System", "Context":"You are very smart AI"}]
 
-     if context == "exit" :
-         break
+        messages.append[{"Role":"User", "Context":prompt}]
+        response = openai.chat.completions.create(model="GPT-3.5-TURBO", messages=messages)
+        
+        response_content = response.choices[0].message.content
+        messages.append[{"Role":"Assistant", "Context":response_content}]
+       
+        
+        print(response_content)
+        
+def prompt() -> str:
+    
+    context = typer.prompt("\nHello, I´m your AI assistant,I´d love to interact with you")
 
-     messages.append[{"Role":"User", "Context":context}]
-     response = openai.chat.completions.create(model="GPT-3.5-TURBO", messages=messages)
-     
-     
+    if context == "exit" :
+        raise typer.Abort() 
+    return prompt() 
+  
+      
+if __name__ == "__main__":
+         typer.run(main)
