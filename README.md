@@ -32,7 +32,7 @@ Python es el mejor lenguaje para mí en este momento, y he hecho muchos proyecto
 
  PYTHON PROJECTS :
 
-|[ CURRENCYCONVERTER](MyFavouriteProjects/CurrencyConverter)|     |[ ATMMACHINE](MyFavouriteProjects/ATMMachine)|
+|[ CURRENCYCONVERTER](MyFavouriteProjects/CurrencyConverter)|     |[ATMMACHINE](MyFavouriteProjects/ATMMachine)|
 
 |[ PASSWORD-ENCRYPTER](MyFavouriteProjects/PasswordEncrypter)|       |[WHEATHER-API](MyFavouriteProjects/WeatherAPI)| 
 
