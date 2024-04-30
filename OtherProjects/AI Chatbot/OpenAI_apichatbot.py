@@ -20,6 +20,8 @@ def main() -> str:
         print(response_content)
         
 def prompt() -> str:
+    """Function to do interactions with the chatbot.
+    Return: string"""
     
     context = typer.prompt("\nHello, I´m your AI assistant,I´d love to interact with you")
 
