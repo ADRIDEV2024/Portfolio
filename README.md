@@ -32,8 +32,8 @@ Python es el mejor lenguaje para mí en este momento, y he hecho muchos proyecto
 
  PYTHON PROJECTS :
 
-|[ CURRENCYCONVERTER](MyFavouriteProjects/CurrencyConverter) |     |[ ATMMACHINE](MyFavouriteProjects/ATMMachine) |
+|[ CURRENCYCONVERTER](MyFavouriteProjects/CurrencyConverter)|     |[ATMMACHINE](MyFavouriteProjects/ATMMachine)|
 
-|[ PASSWORD-ENCRYPTER](MyFavouriteProjects/PasswordEncrypter) |       | [WHEATHER-API](MyFavouriteProjects/WeatherAPI) | 
+|[ PASSWORD-ENCRYPTER](MyFavouriteProjects/PasswordEncrypter)|       |[WHEATHER-API](MyFavouriteProjects/WeatherAPI)| 
 
-|[YOUTUBE DOWNLOADER](OtherProjects/YoutubeDownloader) |
+|[YOUTUBE DOWNLOADER](OtherProjects/YoutubeDownloader)|            |[AI CHATBOT](https://github.com/ADRIDEV2024/Portfolio/blob/main/OtherProjects/AI%20Chatbot/OpenAI_apichatbot.py)|
