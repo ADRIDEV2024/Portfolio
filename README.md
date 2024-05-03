@@ -37,3 +37,6 @@ Python es el mejor lenguaje para mí en este momento, y he hecho muchos proyecto
 |[ PASSWORD-ENCRYPTER](MyFavouriteProjects/PasswordEncrypter)|       |[WHEATHER-API](MyFavouriteProjects/WeatherAPI)| 
 
 |[YOUTUBE DOWNLOADER](OtherProjects/YoutubeDownloader)|            |[AI CHATBOT](https://github.com/ADRIDEV2024/Portfolio/blob/main/OtherProjects/AI%20Chatbot/OpenAI_apichatbot.py)|
+
+|[URL-SHORTENER](URLShortener) |
+
