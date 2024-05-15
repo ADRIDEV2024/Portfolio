@@ -62,3 +62,8 @@ Puedes hacer las operaciones bancarias normales y basicas,como depositar dinero 
 A simple program to encrypt a password in a few lines of code that works using an algorithm to hash any password you enter.
 I imported the Passlib module to complete this task.
 Un sencillo programa para encriptar una contraseña en unas pocas líneas de código que funciona usando un algoritmo para hacer hash de cualquier contraseña que introduzcas.Importé el módulo Passlib para completar esta tarea.
+
+----AI CHATBOT----
+
+In this project I made my customized chatbot AI assistant that has the capability to interact with any person in a terminal(Maybe I will fix that in the future and create an interaction in a GUI too). I´ve used the Openapi public api to build this program.
+En este proyecto he diseñado mi chatbot personalizado AI asistente que tiene la capacidad de interactuar con cualquier persona en un terminal(Tal vez voy a arreglar eso en el futuro y crear una interacción en una interfaz gráfica de usuario también). He utilizado la api pública Openapi para construir este programa.
