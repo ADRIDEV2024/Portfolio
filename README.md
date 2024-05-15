@@ -75,5 +75,5 @@ Con este programa podrás descargar cualquier video que desees guardar en tu PC 
 
 ----GUESS THE NUMBER----
 
-This funny game consists in discover the mysterious number that someone has in his mind.You can choose two different levels to play: Easy and Hard.If you want to play in the easy difficulty,you wll have 15 attemps to guess the hidden number.If you decide to play the game in the hard mode,you will have 10 attemps.You need to guess a number between 1 and 100.
-Este divertido juego consiste en descubrir el número misterioso que alguien tiene en su mente: Fácil y Difícil.Si quieres jugar en la dificultad fácil,tendrás 15 intentos para adivinar el número oculto.Si decides jugar este juego en el modo difícil,tendrás 10 intentos.Tienes que adivinar un número entre 1 y 100.
+This funny game consists in discover the mysterious number that someone has in his mind.You can choose two different levels to play: Easy and Hard.If you want to play in the easy difficulty,you wll have 10 attemps to guess the hidden number.If you decide to play the game in the hard mode,you will have 5 attemps.You need to guess a number between 1 and 100.
+Este divertido juego consiste en descubrir el número misterioso que alguien tiene en su mente: Fácil y Difícil.Si quieres jugar en la dificultad fácil,tendrás 10 intentos para adivinar el número oculto.Si decides jugar este juego en el modo difícil,tendrás 5 intentos.Tienes que adivinar un número entre 1 y 100.
