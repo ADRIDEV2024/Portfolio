@@ -52,8 +52,13 @@ Este proyecto fue el primero que realicé cuando empecé a aprender y practicar 
 
 ----ATM MACHINE----
 
-With this project I made a program to simulate an ATM teller, by using POO with Python and the cardholder library.
+With this project I made a program to simulate an ATM teller, by using POO with Python and the Cardholder library.
 You can do the normal and basic bank operations,like deposit your cash,withdraw money from your bank account,enter your pin...
-Con este proyecto he diseñado un programa para simular un cajero automático, utilizando POO con Python y la librería cardholder.
+Con este proyecto he diseñado un programa para simular un cajero automático, utilizando POO con Python y la librería Cardholder.
 Puedes hacer las operaciones bancarias normales y basicas,como depositar dinero en efectivo,sacar dinero de tu cuenta bancaria,introducir tu pin...
 
+----PASSWORD ENCRYPTER----
+
+A simple program to encrypt a password in a few lines of code that works using an algorithm to hash any password you enter.
+I imported the Passlib module to complete this task.
+Un sencillo programa para encriptar una contraseña en unas pocas líneas de código que funciona usando un algoritmo para hacer hash de cualquier contraseña que introduzcas.Importé el módulo Passlib para completar esta tarea.
