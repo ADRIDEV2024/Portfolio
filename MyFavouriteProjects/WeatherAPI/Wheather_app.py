@@ -3,6 +3,7 @@ import requests as req
 from tkinter import messagebox
 from PIL import Image, ImageTk
 import ttkbootstrap as ttkb
+from Apiconfig import apikey
 
 
 root = ttkb.Window(themename="night")
@@ -16,7 +17,7 @@ def get_weather(city):
     Function to get weather info using OpenWeatherMap Api 
     
     """""
-    APIKEY = "   "
+    APIKEY = Apiconfig.apikey
     URL = f"https://api.openweathermap.org/data/3.0/weather?q={city}&appid={APIKEY}"
     req = req.get(URL)
     

@@ -1,4 +1,5 @@
 import requests as req
+from config import apikey
 
 def convert_currency():
     initial_currency = input("\nEnter your initial currency : \n")
@@ -22,7 +23,7 @@ url = "https://api.apilayer.com/fixer/convert?to={to}&from={from}&amount={amount
 
 Payload = {}
 header = {
-"apikey: 9sSG7LPikh55WQQli023V8LipQI43"  
+"apikey: config.apikey"  
 } 
 response = req.request("GET", url, header=header, data= Payload)
 status_code = response.status_code
