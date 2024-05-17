@@ -32,15 +32,13 @@ Python es el mejor lenguaje para mí en este momento, y he hecho muchos proyecto
 
  PYTHON PROJECTS :
 
-|[ CURRENCYCONVERTER](MyFavouriteProjects/CurrencyConverter)|     |[ATMMACHINE](MyFavouriteProjects/ATMMachine)|
-
-|[ PASSWORD-ENCRYPTER](MyFavouriteProjects/PasswordEncrypter)|       |[WHEATHER-API](MyFavouriteProjects/WeatherAPI)| 
-
-|[AUTOMATE YOUR EMAIL](AutomateYourEmail)|
-|[YOUTUBE DOWNLOADER](OtherProjects/YoutubeDownloader)|           
+|[ CURRENCYCONVERTER](MyFavouriteProjects/CurrencyConverter)| |[ATMMACHINE](MyFavouriteProjects/ATMMachine)|
+|[ PASSWORD-ENCRYPTER](MyFavouriteProjects/PasswordEncrypter)| |[WHEATHER-API](MyFavouriteProjects/WeatherAPI)|
+|[VIDEOGAME API-DJANGO](VideogameAPI-DJANGO)||[AUTOMATE YOUR EMAIL](AutomateYourEmail)| 
+|[YOUTUBE DOWNLOADER](OtherProjects/YoutubeDownloader)| 
 |[AI CHATBOT](https://github.com/ADRIDEV2024/Portfolio/blob/main/OtherProjects/AI%20Chatbot/)|
-
-|[URL-SHORTENER](URLShortener) |         |[GUESS THE NUMBER](FunnyGames/GuessTheNumber)|
+|[URL-SHORTENER](URLShortener)|    
+|[GUESS THE NUMBER](FunnyGames/GuessTheNumber)|
 |[SNAKEGAME](FunnyGames/SnakeGame)|
 
 ----CURRENCY CONVERTER----
@@ -80,4 +78,5 @@ Este divertido juego consiste en descubrir el número misterioso que alguien tie
 
 ----URL SHORTENER----
 
-I made a program that can trim any url you pass as input!
+I made a program that can trim any url you pass as input!.I use the Cuttly api to do this project and for requests I imported the requests module.
+Construí un programa que puede recortar cualquier url que le pases como entrada!.Me he instalado la api de Cuttly para hacer este proyecto y para las peticiones importé el módulo requests.
