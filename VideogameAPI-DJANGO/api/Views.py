@@ -9,7 +9,7 @@ from rest_framework.decorators import api_view
 
 @api_view(['GET', 'POST', 'DELETE'])
 def videogame_list(request):
-    if request.method == 'GET':
+ if request.method == 'GET':
         tutorials = Videogame.objects.all()
         
         title = request.query_params.get('title', None)
@@ -19,7 +19,7 @@ def videogame_list(request):
         videogames_serializer = VideogameSerializer(videogames, many=True)
         return JsonResponse(videogames_serializer.data, safe=True)
     
-    elif request.method == 'POST':
+ elif request.method == 'POST':
         game_data = JSONParser().parse(request)
         game_serializer = VideogameSerializer(data=game_data)
         if game_serializer.is_valid():
