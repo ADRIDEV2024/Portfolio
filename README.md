@@ -30,7 +30,7 @@ Python es el mejor lenguaje para mí en este momento, y he hecho muchos proyecto
 
 ![ADRIDEV GitHub stats](https://github-readme-stats.vercel.app/api?username=ADRIDEV2024&show_icons=true&theme=github-dark-dimmed)
 
- PYTHON PROJECTS :
+ALL MY PROJECTS :
 
 |[ CURRENCYCONVERTER](MyFavouriteProjects/CurrencyConverter)| |[ATMMACHINE](MyFavouriteProjects/ATMMachine)|
 |[ PASSWORD-ENCRYPTER](MyFavouriteProjects/PasswordEncrypter)| |[WHEATHER-API](MyFavouriteProjects/WeatherAPI)|
@@ -54,6 +54,11 @@ With this project I made a program to simulate an ATM teller, by using POO with 
 You can do the normal and basic bank operations,like deposit your cash,withdraw money from your bank account,enter your pin...
 Con este proyecto he diseñado un programa para simular un cajero automático, utilizando POO con Python y la librería Cardholder.
 Puedes hacer las operaciones bancarias normales y basicas,como depositar dinero en efectivo,sacar dinero de tu cuenta bancaria,introducir tu pin...
+
+----VIDEOGAME API WITH DJANGO REST FRAMEWORK----
+
+I made an API that stores and retrieves videogames data of interest, like the game title, company, publish date, its creator, and more details. I developed this API using The Django Rest Framework and contains all the basic configurations that every rest API could have. This project includes a simple but robust url routing and a data validation system.
+Programé una API que almacena y obtiene datos de interés de videojuegos, como el título del juego, la compañía, la fecha de publicación, su creador, entre otros detalles. Desarrollé esta API usando The Django Rest Framework y contiene todas las configuraciones básicas que toda api rest podría tener. Este proyecto incluye un enrutamiento de urls simple pero robusto y un sistema de validación de datos.
 
 ----PASSWORD ENCRYPTER----
 
