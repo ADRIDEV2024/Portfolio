@@ -50,7 +50,7 @@ def updateprofile(request):
         context = {
             "form": form,
         }
-        return render(request, "update_profile.html", {"form": form})
+        return render(request, "update_profile.html", context)
     
 def addlesson(request):
     if request.method == 'POST':
@@ -59,3 +59,39 @@ def addlesson(request):
             form.save()
      # Redirect to the lesson detail page after succesfull form submission
         return redirect("update_profile")
+    else:
+        form = LessonsForm()
+        context = {
+            "form": form,
+        }
+        return render(request, "add_lesson.html", context)
+    
+def create_community_post(request):
+    if request.method == 'POST':
+       title = request.POST['title']
+       content = request.POST['content']
+       user = request.user
+       CommunityPost.objects.create(user=user, title=title, content=content)
+       
+       return redirect("communityposts")
+   
+    return render(request, "create_community_post.html")
+    
+def index(request):
+    return render(request, "index.html")
+
+
+def login(request):
+    if request.method == "POST":
+        username = request.POST['username']
+        password = request.POST['password']
+        user = auth.authenticate(username=username, password=password)
+        if user is not None:
+            auth.login(request, user)
+            return render(request, 'dashboard.html')
+        else:
+            messages.info(request, "successfully")
+                    
+            return render(request, 'login.html')
+    else:
+        return render(request, "login.html")
