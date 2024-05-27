@@ -3,7 +3,7 @@ from django.contrib import auth, messages
 from .models import UserProfile, Lesson, Language, UserLanguage, CommunityPost
 from django.contrib.auth.views import LoginView
 from .models import Lesson, UserProfile
-from .forms import FavoriteLanguageForm, LessonTagForm, LanguageForm, SignUpForm
+from .forms import LessonTagForm, LanguageForm, SignUpForm
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth import login as auth_login, authenticate, User
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
@@ -95,3 +95,19 @@ def login(request):
             return render(request, 'login.html')
     else:
         return render(request, "login.html")
+    
+def logout(request):
+    auth.logout(request)
+    messages.success(request, "You have been logged out")
+    return render(request, 'index.html')
+
+def login(request):
+    if request.method == "POST":
+        user = auth.authenticate(username=request.POST["username"], 
+                                 password=request.POST["password"])
+        if user is not None:
+            user_profile = UserProfile.objects.get(user=user)
+            auth.login(request, user)
+            return redirect('dashboard')
+        else:
+            messages.error(request, 'Invalid credentials')

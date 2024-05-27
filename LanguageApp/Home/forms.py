@@ -24,7 +24,8 @@ class LoginForm(AuthenticationForm):
 class UserProfileForm(forms.ModelForm):
     class Meta:
         model = UserProfile
-        fields = ["full_name","lessons_completed","lessons_in_progress","favorite_languages","languages_level","languages_learning"]
+        fields = ["full_name","lessons_completed","lessons_in_progress","favorite_languages"
+                  ,"languages_level","languages_learning"]
         
 class LessonsForm(forms.ModelForm):
     
@@ -40,8 +41,17 @@ class LessonsForm(forms.ModelForm):
     difficulty = forms.ChoiceField(choices=Lesson.difficulty_choices)
     tags = forms.ModelMultipleChoiceField(queryset=LessonTag.objects.all(), widget=forms.CheckboxSelectMultiple)
     
-    class LanguageForm(forms.ModelForm):
-       
-        class Meta:
-            model = UserLanguage
-            fields = ["language","user"]
+class LanguageForm(forms.ModelForm):
+     class Meta:
+         model = UserLanguage
+         fields = ["language","user"]
+
+class FavoriteLanguageForm(forms.ModelForm):
+    class Meta:
+        model = Language
+        fields = ['name']
+
+class LessonTagForm(forms.ModelForm):
+    class Meta:
+        model = LessonTag
+        fields = ['name']
