@@ -8,6 +8,8 @@ urlpatterns = [
     path("logout/", views.logout, name="logout"),
     path("dashboard/", views.dashboard, name="dashboard"),
     path("communityposts/", views.communityposts, name="communityposts"),
-    path("updateprofile/", views.updateprofile, name="updateprofile"),
+    path("update_profile/", views.updateprofile, name="updateprofile"),
     path("addlesson/", views.addlesson, name= "addlesson"),
+    path("favorite_language/", views.favorite_language, name="select_favorite_language"),
+    path("language/<int:language_id>/", views.language, name="language")
 ]

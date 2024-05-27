@@ -111,3 +111,21 @@ def login(request):
             return redirect('dashboard')
         else:
             messages.error(request, 'Invalid credentials')
+
+def signup(request):
+    """
+    signup user
+    input: user_type,user_name,password,phone number
+    """
+    if request.method == 'POST':
+        if request.POST['password1'] == request.POST['password2']:
+            try:
+                user = User.objects.get(username=request.POST['username'])
+                if user:
+                    messages.error(request, 'Username already exists!')
+                    return render(request, 'signup.html')
+            except User.DoesNotExist:
+                 user = User.objects.create_user(
+                    request.POST['username'], password=request.POST['password1'],
+                    first_name=request.POST['name'],
+                    email=request.POST['email'])

@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %}Create Your Profile - Language Learning App{% endblock %}
+{% block title %}Create Your Profile{% endblock %}
  {% block content %}
   <section class="container">
     <div class="row justify-content-center">
@@ -9,7 +9,7 @@
             <h4 class="mb-0">Create Your Profile </h4>
           </div>
           <div class="card-body">
-            <form method="post" action="{% url 'update_profile' %}">
+            <form method="post" action="{% url 'updateprofile' %}">
                 {% csrf_token %}
                 {{ form.as_p }}
                 <input type="submit" value="Update Profile">
@@ -19,4 +19,4 @@
       </div>
     </div>
   </section>
-          {% endblock  %}
+{% endblock  %}
