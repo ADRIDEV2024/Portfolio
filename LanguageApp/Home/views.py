@@ -129,3 +129,27 @@ def signup(request):
                     request.POST['username'], password=request.POST['password1'],
                     first_name=request.POST['name'],
                     email=request.POST['email'])
+                 
+def lesson_detail(request, lesson_id):
+    lesson = get_object_or_404(Lesson, pk=lesson_id)
+
+    # Track user progress
+    user_profile = UserProfile.objects.get(user=request.user)
+    user_profile.completed_lessons.add(lesson)
+    return render(request, "lessons_detail.html", {"lesson": lesson})
+
+def create_lesson_tag(request):
+    if request.method == 'POST':
+        form = LessonTagForm(request.POST)
+        if form.is_valid():
+            lesson_tag = form.save()
+            # Redirect to the lesson_tags page after successful form submission
+            return redirect('create_lesson')
+    else:
+        form = LessonTagForm()
+
+    context = {
+        'form': form,
+    }
+
+    return render(request, 'create_lesson_tag.html', context)
