@@ -2,7 +2,7 @@ from django.urls import path
 from .import views
 
 urlpatterns = [
-    path('', views.index, name="index"),
+    path('', views.index),
     path('signup', views.signup, name='signup'),
     path('login/', views.login, name='login'),
     path("logout/", views.logout, name="logout"),
@@ -13,5 +13,5 @@ urlpatterns = [
     path("favorite_language/", views.favorite_language, name="select_favorite_language"),
     path("language/<int:language_id>/", views.language, name="language"),
     path("lessons_detail/<int:lesson_id>/", views.lesson_detail, name="lesson_detail"),
-    ),
+    path("create_community_post/", views.create_community_post, name="create_community_post"),
 ]
