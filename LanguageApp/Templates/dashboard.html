@@ -26,7 +26,7 @@
               {% endfor %}
             </ul>
           </div>
-        
+        </div>
       </div>
       <div class="col-md-8">
         <div class="card mt-4">
@@ -45,7 +45,7 @@
       {% for lesson in completed_lessons %}
       <li>
         <a href="{% url 'lessons_detail' lesson_id=lesson.id %}">{{ lesson.title }}</a>
-        {% comment %} <a href="{% url 'lessons_detail' %}">{{ lesson.title }}</a> {% endcomment %}
+        {% comment %} <a href="">{{ lesson.title }}</a> {% endcomment %}
       
       </li>
       {% endfor %}
