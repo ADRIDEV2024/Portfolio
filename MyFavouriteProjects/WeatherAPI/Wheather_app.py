@@ -51,7 +51,7 @@ def search():
 # ENTRY WIDGET TO ENTER THE CITY NAME
 
 city_entry = ttkb.Entry(root, font="Arial, 14")
-city_entry.pack(pady=50)
+city_entry.pack(pady=10)
 
 # BUTTON WIDGET TO FOUND WEATHER INFO 
 
@@ -68,7 +68,7 @@ location_label.pack(pady=18)
 icon_label = tk.Label(root)
 icon_label.pack()
 
-temperature_lbl = tk.Label(root, font="Cambria, 16")
+temperature_lbl = tk.Label(root, font="Arial, 16")
 temperature_lbl.pack()
 
 description_label = tk.Label(root, font="Cambria, 16")
