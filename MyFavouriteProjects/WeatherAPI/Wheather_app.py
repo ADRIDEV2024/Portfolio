@@ -21,7 +21,7 @@ def get_weather(city):
     URL = f"https://api.openweathermap.org/data/3.0/weather?q={city}&appid={APIKEY}"
     req = req.get(URL)
     
-    if req.status_code != 200:
+    if req.status_code == 404:
         messagebox.showerror("Not found")
         return None
 
@@ -40,7 +40,7 @@ def search():
     location_label.configure(text=f"{city},{country}")
     
     image = Image.open(req.get(icon_url, stream=True).raw)
-   
+    icon = ImageTk.PhotoImage(image)
     icon_label.configure(image=icon)
     icon_label.image = icon 
     
@@ -50,8 +50,8 @@ def search():
     
 # ENTRY WIDGET TO ENTER THE CITY NAME
 
-city_entry = ttkb.Entry(root, font="Cambria, 14")
-city_entry.pack(pady=10)
+city_entry = ttkb.Entry(root, font="Arial, 14")
+city_entry.pack(pady=50)
 
 # BUTTON WIDGET TO FOUND WEATHER INFO 
 
