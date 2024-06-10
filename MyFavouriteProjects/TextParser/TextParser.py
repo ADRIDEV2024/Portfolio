@@ -12,14 +12,14 @@ import re
 
 
 
-def parse(text: str) -> str:
+def parse(text: str):
 
     words_count = 0
     letter_count = 0
     sentences_count = 0
     longest_word = []
 
-    words = text.replace("\n", " ").split(" ")
+    words = text.replace("\n", " ")
 
     for word in words:
 
