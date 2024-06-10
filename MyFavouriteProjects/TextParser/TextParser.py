@@ -12,14 +12,14 @@ import re
 
 
 
-def parse(text: str):
+def parse(text: str) -> str:
 
     words_count = 0
     letter_count = 0
     sentences_count = 0
     longest_word = []
 
-    words = text.replace("\n", " ")
+    words = text.replace("\n", " ").split(" ")
 
     for word in words:
 
@@ -47,4 +47,3 @@ def parse(text: str):
     print(f"Longest word is: {longest_word}\n")
     
 
-parse("This is a simple text for this practical exercise")
