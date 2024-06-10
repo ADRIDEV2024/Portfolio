@@ -21,7 +21,7 @@ def get_weather(city):
     URL = f"https://api.openweathermap.org/data/3.0/weather?q={city}&appid={APIKEY}"
     req = req.get(URL)
     
-    if req.status_code == 404:
+    if req.status_code != 200:
         messagebox.showerror("Not found")
         return None
 
@@ -34,13 +34,13 @@ def search():
     city = city_entry.get()
     result = get_weather(city)
     if result is None:
-        return None
+        return 
      # If the city is found, unpack the weather information
     icon_url,temperature,description,city,country = result 
     location_label.configure(text=f"{city},{country}")
     
     image = Image.open(req.get(icon_url, stream=True).raw)
-    icon = ImageTk.PhotoImage(image)
+   
     icon_label.configure(image=icon)
     icon_label.image = icon 
     
