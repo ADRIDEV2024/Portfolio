@@ -25,7 +25,7 @@ def parse(text: str) -> str:
 
         if len(word) != 0:
 
-        if "." in word:
+           if "." in word:
                 sentences_count += 1
 
             current_word = re.sub(r"[^\w]", "", word)
