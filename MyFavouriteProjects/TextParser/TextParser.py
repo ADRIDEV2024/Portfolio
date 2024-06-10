@@ -25,7 +25,7 @@ def parse(text: str) -> str:
 
         if len(word) != 0:
 
-            if "." in word:
+        if "." in word:
                 sentences_count += 1
 
             current_word = re.sub(r"[^\w]", "", word)
@@ -37,6 +37,7 @@ def parse(text: str) -> str:
 
             if len(longest_word) == 0 or len(longest_word[0]) == len(current_word):
                 longest_word.append(current_word)
+                
             elif len(current_word) > len(longest_word[0]):
                 longest_word.clear()
                 longest_word.append(current_word)
@@ -46,4 +47,5 @@ def parse(text: str) -> str:
     print(f"Number of sentences: {sentences_count}\n")
     print(f"Longest word is: {longest_word}\n")
     
+parse("This is a simple text for this practical exercise")
 
