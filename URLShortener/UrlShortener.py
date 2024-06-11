@@ -10,13 +10,12 @@ def shorten_link(full_link, link_name):
     requests = rq.get(BASE_URL, params=payload)
     data = rq.json()
     
-    
-
 try:
 
     title = data["url"]["title"]
     short_link = data["url"]["shortlink"]
     print(f"TITLE: {title}")
+    print(f"Short link: {short_link})
     
 except Exception as error :
     status = data["url"]["status"]
