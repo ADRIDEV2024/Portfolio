@@ -8,7 +8,7 @@ def shorten_link(full_link, link_name):
     
     payload = {"key": API_KEY, "short":full_link, "name":link_name}
     requests = rq.get(BASE_URL, params=payload)
-    data = rq.json()
+    
     
 
 try:
@@ -16,8 +16,7 @@ try:
     title = data["url"]["title"]
     short_link = data["url"]["shortlink"]
     print(f"TITLE: {title}")
-    print(f"LINK: {short_link}")
-
+    
 except Exception as error :
     status = data["url"]["status"]
     print("Error Status:", status, error)
