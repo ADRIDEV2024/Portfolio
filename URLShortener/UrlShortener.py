@@ -8,6 +8,7 @@ def shorten_link(full_link, link_name):
     
     payload = {"key": API_KEY, "short":full_link, "name":link_name}
     requests = rq.get(BASE_URL, params=payload)
+    data = rq.json()
     
     
 
