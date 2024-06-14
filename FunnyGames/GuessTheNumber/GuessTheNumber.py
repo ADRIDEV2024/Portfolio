@@ -32,7 +32,7 @@ def play():
         level = input("Chosse level dificulty...type <<easy>> or <<hard>>: ")
         attempts = level_dificulty(level)
         
-        while guess_number not answer:
+        while guess_number != answer:
 
             print(f"You have {attempts}remaining to guess my number.")
             guess_number = input(int("Guess a number: "))
