@@ -33,7 +33,7 @@ while True:
              if event.key == py.K_d and dirs[py.K_d]:
                  snake_dir = (TILE_SIZE, 0)
             
-    screen.fill("white")
+    screen.fill("black")
      # Draw snake
     [py.draw.Rect(screen, "green", segments) for segment in segments]
     
