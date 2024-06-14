@@ -13,7 +13,7 @@ def level_dificulty(level_chosen:str):
     else:
         return
     
-def check_answer(guess_number,answer,attempts):
+def check_answer(guess_number,answer:int,attempts:int):
     
     if guess_number<answer:
         print("Wrong!,the number you are looking for is greater")
