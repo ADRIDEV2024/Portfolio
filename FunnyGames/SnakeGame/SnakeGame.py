@@ -23,8 +23,6 @@ while True:
         if event.type == py.QUIT:
             exit()
         elif event.type == py.KEYDOWN: 
-             if event.key == py.K_d and dirs[py.K_d]:
-                 snake_dir = (TILE_SIZE, 0)
             
              if event.key == py.K_w and dirs[py.K_w]:
                  snake_dir = (0, -TILE_SIZE)
@@ -32,6 +30,8 @@ while True:
                  snake_dir = (0, TILE_SIZE)
              if event.key == py.K_a and dirs[py.K_a]:
                  snake_dir = (-TILE_SIZE, 0)
+             if event.key == py.K_d and dirs[py.K_d]:
+                 snake_dir = (TILE_SIZE, 0)
             
     screen.fill("white")
      # Draw snake
