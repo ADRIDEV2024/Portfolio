@@ -13,7 +13,7 @@ def level_dificulty(level_chosen:str):
     else:
         return
     
-def check_answer(guess_number,answer:int,attempts:int):
+def check_answer(guess_number,answer,attempts):
     
     if guess_number<answer:
         print("Wrong!,the number you are looking for is greater")
@@ -24,8 +24,8 @@ def check_answer(guess_number,answer:int,attempts:int):
         
 def play():
     
-        print("I have a number between 1 to 100 in my mind")
-        answer = random.randint(1,100)
+        print("I have a number between 1 to 150 in my mind")
+        answer = random.randint(1,150)
 
         print(answer)
 
