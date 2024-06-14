@@ -43,5 +43,6 @@ def play():
 
             elif guess_number != answer:
                 print("Guess again")
-
+                
+if __name__ == "__main__":
 play()
