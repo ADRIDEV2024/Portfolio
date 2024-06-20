@@ -17,11 +17,11 @@ def shorten_link(full_link, link_name):
         print(f"Short link: {short_link})
     
     except Exception as error:
-                                status = data["url"]["status"]
-                                print("Error Status:", status, error)
+           status = data["url"]["status"]
+           print("Error Status:", status, error)
                             
-                                link = input("Enter the link you want to trim : ")
-                                name = input("Enter a name for your link: ")
+ link = input("Enter the link you want to trim : ")
+ name = input("Enter a name for your link: ")
                                     
     
             
