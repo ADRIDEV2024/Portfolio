@@ -1,7 +1,7 @@
 import random
 import string 
 
-def generate_random_password(min_length, numbers=True, special_characters=True):
+def generate_random_password(min_length, numbers, special_characters):
     letters = string.ascii_letters
     digits = string.digits
     special = string.punctuation
@@ -14,7 +14,7 @@ def generate_random_password(min_length, numbers=True, special_characters=True):
         characters += special
         
     password = " "
-    meets_condition = False
+    
     is_number = False
     is_special = False
         
