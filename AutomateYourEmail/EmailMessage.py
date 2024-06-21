@@ -5,7 +5,7 @@ from email.message import EmailMessage
 
 # Sending a get request to the hidden file where we have
 # our password as an enviroment variable
-email_password = os.environ.get() 
+email_password = os.environ.get("Email Password") 
 email_sender = "adridev2024@gmail.com"
 email_receiver = "receiverperson@gmail.com"
 
