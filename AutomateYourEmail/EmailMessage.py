@@ -18,13 +18,12 @@ email = EmailMessage()
 email["FROM"] = "adridev2024@gmail.com"
 email["TO"] =  "receiverperson@gmail.com"
 email["Subject"] = subject
-email.set_content(body)
-# We define and save the email body using the Content Manager
+email.set_content(body) # We define and save the email body using the Content Manager
 
 # Apply SSL security protocol to protect the email and send it to the server in a secure way 
 context = ssl.create_default_context()
 
-with smtplib.SMTP_SSL("smtpgmail.com", 6000, context=context) as smtp:
+with smtplib.SMTP_SSL("", 6000, context=context) as smtp:
     smtp.login(email_sender, email_password)
     smtp.sendmail(email_sender, email_receiver, email.as_string())
 
