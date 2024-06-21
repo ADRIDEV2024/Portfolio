@@ -18,7 +18,7 @@ def generate_random_password(min_length, numbers=True, special_characters):
     is_number = False
     is_special = False
         
-    while not meets_condition or len(password) < min_length:
+    while not meets_condition or (len(password) < min_length):
         new_chars = random.choice(characters)
         password += new_chars
         
