@@ -11,12 +11,11 @@ def main() -> str:
         messages = [{"Role":"Assistant", "Context":"You are very smart AI"}]
 
         messages.append[{"Role":"User", "Context":prompt}]
-        response = openai.chat.completions.create(model="GPT-3.5-TURBO", messages)
+        response = openai.chat.completions.create(model="GPT-3.5-TURBO", messages=messages)
         
         response_content = response.choices[0].message.content
         messages.append[{"Role":"Assistant", "Context":response_content}]
        
-        
         print(response_content)
         
 def prompt() -> str:
