@@ -8,10 +8,10 @@ def main() -> str:
     
         openai.api_key = config.api_key
 
-        messages = [{"Role":"System", "Context":"You are very smart AI"}]
+        messages = [{"Role":"Assistant", "Context":"You are very smart AI"}]
 
         messages.append[{"Role":"User", "Context":prompt}]
-        response = openai.chat.completions.create(model="GPT-3.5-TURBO", messages=messages)
+        response = openai.chat.completions.create(model="GPT-3.5-TURBO", messages)
         
         response_content = response.choices[0].message.content
         messages.append[{"Role":"Assistant", "Context":response_content}]
