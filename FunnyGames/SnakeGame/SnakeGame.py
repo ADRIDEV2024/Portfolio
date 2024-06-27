@@ -5,12 +5,12 @@ WINDOW = 1000
 TILE_SIZE = 50
 RANGE = ( TILE_SIZE // 2, WINDOW - TILE_SIZE // 2, TILE_SIZE)
 get_random_position = lambda : [randrange(*RANGE), randrange(*RANGE)]
-snake = py.Rect([0,0, TILE_SIZE-2, TILE_SIZE-2])
+snake = py.Rect([0,0, TILE_SIZE-3, TILE_SIZE-3])
 snake.center = get_random_position()
 screen = py.display.set_mode([WINDOW]*2)
 time_clock = py.time.Clock()
 time, time_step = 0, 100 # Speed control for my snake 
-dirs = {py.K_w:1, py.K_a:1, py.K_d:1, py.K_s:1}
+#dirs = {py.K_w:1, py.K_a:1, py.K_d:1, py.K_s:1}
 length = 1 
 segments = [snake.copy()]
 snake_dir = (0,0) # These values shows the snake x, y location cordinates on every movement
@@ -21,7 +21,7 @@ food.center = get_random_position()
 while True:
     for event in py.event.get():
         if event.type == py.QUIT:
-            exit()
+            break
         elif event.type == py.KEYDOWN: 
             
              if event.key == py.K_w and dirs[py.K_w]:
