@@ -1,7 +1,7 @@
 import random
 
-EASY_LEVEL_ATTEMPTS = 10
-HARD_LEVEL_ATTEMPTS = 5
+EASY_LEVEL_ATTEMPTS = 5
+HARD_LEVEL_ATTEMPTS = 3
 
 
 def level_dificulty(level_chosen:str):
