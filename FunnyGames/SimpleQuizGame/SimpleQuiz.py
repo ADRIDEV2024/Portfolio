@@ -10,7 +10,7 @@ def check_answer(user_guess:str,correct_answer:str):
         print("Wrong :( ")
 
 for question in range(len(QA.questions)):
- print("*************************")
+ print("*************************\n")
  print(QA.questions[question]["Question"])
  for i in QA.options[QA.questions] :
      print(i)
@@ -18,6 +18,7 @@ for question in range(len(QA.questions)):
 score = 0
 guess = input("Enter the answer (A,B,C or D): ").upper()
 is_correct = check_answer(guess,[QA.questions],["Answer"])
+
 if is_correct:
     print("Correct!")
     score+=1
