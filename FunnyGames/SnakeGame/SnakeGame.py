@@ -21,7 +21,7 @@ food.center = get_random_position()
 while True:
     for event in py.event.get():
         if event.type == py.QUIT:
-            break
+            exit()
         elif event.type == py.KEYDOWN: 
             
              if event.key == py.K_w and dirs[py.K_w]:
