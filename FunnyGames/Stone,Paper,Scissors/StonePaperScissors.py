@@ -1,19 +1,19 @@
 import random
 
 def play():
- player1 = input("Choose an option: stone, paper or scissors.\n").lower()
+ player = input("Choose an option: stone, paper or scissors.\n").lower()
  
  computer = print(random.choice(["stone","paper","scissors"]))
  
- if player1 == computer :
+ if player == computer :
       return "¡Tie!"
   
- if win_player(player1,computer):
+ if win_player(player,computer):
        return "You win!"
    
  return "You lose"
 
-def win_player(player1,computer):
+def win_player(player,computer):
     # Return True if the player wins  
     # Stone wins scissors(Stone > Scissors).
     # Paper wins Stone(Paper > Stone).
