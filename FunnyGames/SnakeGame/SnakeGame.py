@@ -5,7 +5,7 @@ WINDOW = 1000
 TILE_SIZE = 50
 RANGE = ( TILE_SIZE // 2, WINDOW - TILE_SIZE // 2, TILE_SIZE)
 get_random_position = lambda : [randrange(*RANGE), randrange(*RANGE)]
-snake = py.Rect([0,0, TILE_SIZE-3, TILE_SIZE-3])
+snake = py.Rect([0,0, TILE_SIZE-2, TILE_SIZE-2])
 snake.center = get_random_position()
 screen = py.display.set_mode([WINDOW]*2)
 time_clock = py.time.Clock()
@@ -33,7 +33,7 @@ while True:
              if event.key == py.K_d and dirs[py.K_d]:
                  snake_dir = (TILE_SIZE, 0)
             
-    screen.fill("black")
+    screen.fill("")
      # Draw snake
     [py.draw.Rect(screen, "green", segments) for segment in segments]
     
