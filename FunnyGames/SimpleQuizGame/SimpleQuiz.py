@@ -1,11 +1,7 @@
 import QuestionsAnswers as QA
 
-print("?????????????")
-print()
-print("PYTHON SIMPLE QUIZ GAME")
-print()
-print("?????????????")
 
+print("\t****** PYTHON SIMPLE QUIZ GAME ******\n")
 
 def check_answer(user_guess:str,correct_answer:str):
     if user_guess == correct_answer:
