@@ -44,7 +44,7 @@ while True:
         length, snake_dir = 1, (0,0)
         segments = [snake.copy()]
     # Draw food 
-    py.draw.Rect(screen, "",food) 
+    py.draw.Rect(screen, "red",food) 
     # Check food position in window
     if snake.center == food.center:
         food.center = get_random_position()
