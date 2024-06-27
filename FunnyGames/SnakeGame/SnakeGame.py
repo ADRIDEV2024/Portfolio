@@ -33,7 +33,7 @@ while True:
              if event.key == py.K_d and dirs[py.K_d]:
                  snake_dir = (TILE_SIZE, 0)
             
-    screen.fill("")
+    screen.fill("black")
      # Draw snake
     [py.draw.Rect(screen, "green", segments) for segment in segments]
     
@@ -44,7 +44,7 @@ while True:
         length, snake_dir = 1, (0,0)
         segments = [snake.copy()]
     # Draw food 
-    py.draw.Rect(screen, "red",food) 
+    py.draw.Rect(screen, "",food) 
     # Check food position in window
     if snake.center == food.center:
         food.center = get_random_position()
