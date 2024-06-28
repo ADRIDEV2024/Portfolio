@@ -7,7 +7,7 @@ context = CryptContext(
     pbkdf2_sha256_default_rounds = 30000 # Total of iterations to reduce possible crackings
 )
 
-password = " "
+password = "myinsecurepassword_123 "
 
 cipher_password = context.hash(password)
 print(cipher_password)
