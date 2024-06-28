@@ -12,3 +12,13 @@ password = "name_234?-!"
 cipher_password = context.hash(password)
 print(cipher_password)
 
+import hashlib
+
+def encrypter():
+    clave = str(input("Introduce la contraseña a cifrar: ")).encode('utf-8')
+
+
+    sha256 = hashlib.sha256(clave).hexdigest()
+    print("Hash SHA256: %s" % str(sha256))
+    
+print(encrypter())
