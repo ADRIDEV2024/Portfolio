@@ -1,6 +1,5 @@
 
 
-![IMAGEREPO](https://github.com/ADRIDEV2024/Portfolio/assets/163412333/82a2efdc-114c-4727-9b94-7fc043ace81e)
 
 SOCIAL MEDIA & CONTACT :
 
@@ -43,32 +42,32 @@ ALL MY PROJECTS :
 |[GUESS THE NUMBER](FunnyGames/GuessTheNumber)|
 |[SNAKEGAME](FunnyGames/SnakeGame)|
 
-----CURRENCY CONVERTER----
+---- CURRENCY CONVERTER ----
 
 In this project I imported the requests module and I´ve used the Fixer api to emulate a simple foreign exchange system that converts almost any currency to another you want to exchange. I did this project because it solves a real world problem and 
 I´ve learned how to manage my first api using Python.This project was the first completed when I started learning and practising Python.
 En este proyecto he importado el módulo requests y he utilizado la api Fixer para emular un sencillo sistema de cambio de divisas que convierte casi cualquier moneda a otra que quieras cambiar. Hice este proyecto porque resuelve un problema del mundo real.
 Este proyecto fue el primero que realicé cuando empecé a aprender y practicar Python.
 
-----ATM MACHINE----
+---- ATM MACHINE ----
 
 With this project I made a program to simulate an ATM teller, by using POO with Python and the Cardholder library.
 You can do the normal and basic bank operations,like deposit your cash,withdraw money from your bank account,enter your pin...
 Con este proyecto he diseñado un programa para simular un cajero automático, utilizando POO con Python y la librería Cardholder.
 Puedes hacer las operaciones bancarias normales y basicas,como depositar dinero en efectivo,sacar dinero de tu cuenta bancaria,introducir tu pin...
 
-----VIDEOGAME API WITH DJANGO REST FRAMEWORK----
+---- VIDEOGAME API WITH DJANGO REST FRAMEWORK ----
 
 I made an API that stores and retrieves videogames data of interest, like the game title, company, publish date, its creator, and more details. I developed this API using The Django Rest Framework and contains all the basic configurations that every rest API could have. This project includes a simple but robust url routing and a data validation system.
 Programé una API que almacena y obtiene datos de interés de videojuegos, como el título del juego, la compañía, la fecha de publicación, su creador, entre otros detalles. Desarrollé esta API usando The Django Rest Framework y contiene todas las configuraciones básicas que toda api rest podría tener. Este proyecto incluye un enrutamiento de urls simple pero robusto y un sistema de validación de datos.
 
-----PASSWORD ENCRYPTER----
+---- PASSWORD ENCRYPTER ----
 
 A simple program to encrypt a password in a few lines of code that works using an algorithm to hash any password you enter.
 I imported the Passlib module to complete this task.
 Un sencillo programa para encriptar una contraseña en unas pocas líneas de código que funciona usando un algoritmo para hacer hash de cualquier contraseña que introduzcas.Importé el módulo Passlib para completar esta tarea.
 
-----AI CHATBOT----
+---- AI CHATBOT ----
 
 In this project I made my customized chatbot AI assistant that has the capability to interact with any person in a terminal(Maybe I will fix that in the future and create an interaction in a GUI too). I´ve used the Openapi public api to build this program.
 En este proyecto he diseñado mi chatbot personalizado AI asistente que tiene la capacidad de interactuar con cualquier persona en un terminal(Tal vez voy a arreglar eso en el futuro y crear una interacción en una interfaz gráfica de usuario también). He utilizado la api pública Openapi para construir este programa.
