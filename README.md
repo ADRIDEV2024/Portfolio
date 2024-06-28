@@ -1,3 +1,4 @@
+![IMAGEREPO](https://github.com/ADRIDEV2024/Portfolio/assets/163412333/82a2efdc-114c-4727-9b94-7fc043ace81e)
 
 
 
@@ -72,17 +73,17 @@ Un sencillo programa para encriptar una contraseña en unas pocas líneas de có
 In this project I made my customized chatbot AI assistant that has the capability to interact with any person in a terminal(Maybe I will fix that in the future and create an interaction in a GUI too). I´ve used the Openapi public api to build this program.
 En este proyecto he diseñado mi chatbot personalizado AI asistente que tiene la capacidad de interactuar con cualquier persona en un terminal(Tal vez voy a arreglar eso en el futuro y crear una interacción en una interfaz gráfica de usuario también). He utilizado la api pública Openapi para construir este programa.
 
-----YOUTUBE DOWNLOADER----
+---- YOUTUBE DOWNLOADER ----
 
 With this program you could download any video you wish to save in the PC in a very fast way.I use Tkinter and Pytube to build the interface that gets the requested video link and internally processes the url you passed and will return that video in a downloaded extension format of your choice(like mp4 for example).All you need to do after that is know in wich directory save it.
 Con este programa podrás descargar cualquier video que desees guardar en tu PC de una manera muy rápida.He empleado Tkinter y Pytube para construir la interfaz que recibe el enlace del video solicitado y procesa internamente la url que le pasas y te devuelve ese video en un formato de extensión de descarga de tu elección(como mp4 por ejemplo).Todo lo que necesitas hacer después es saber en que directorio guardarlo.
 
-----GUESS THE NUMBER----
+---- GUESS THE NUMBER ----
 
 This funny game consists in discover the mysterious number that someone has in his mind.You can choose two different levels to play: Easy and Hard.If you want to play in the easy difficulty,you wll have 10 attemps to guess the hidden number.If you decide to play the game in the hard mode,you will have 5 attemps.You need to guess a number between 1 and 100.
 Este divertido juego consiste en descubrir el número misterioso que alguien tiene en su mente: Fácil y Difícil.Si quieres jugar en la dificultad fácil,tendrás 10 intentos para adivinar el número oculto.Si decides jugar este juego en el modo difícil,tendrás 5 intentos.Tienes que adivinar un número entre 1 y 100.
 
-----URL SHORTENER----
+---- URL SHORTENER ----
 
 I made a program that can trim any url you pass as input!.I use the Cuttly api to do this project and for requests I imported the requests module.
 Construí un programa que puede recortar cualquier url que le pases como entrada!.Me he instalado la api de Cuttly para hacer este proyecto y para las peticiones importé el módulo requests.
