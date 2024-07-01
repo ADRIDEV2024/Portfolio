@@ -1,9 +1,9 @@
 import requests as rq
-import Apiconfig 
+import Apiconfig as Apic
 
 
 def shorten_link(full_link, link_name):
-    API_KEY = Apiconfig.API_KEY
+    API_KEY = Apic.API_KEY
     BASE_URL = "https://cuttly.ly/api/api.php" 
     
     payload = {"key": API_KEY, "short":full_link, "name":link_name}
