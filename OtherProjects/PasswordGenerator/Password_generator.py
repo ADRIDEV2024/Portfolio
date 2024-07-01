@@ -5,7 +5,6 @@ def generate_random_password(min_length, numbers=True, special_characters):
     letters = string.ascii_letters
     digits = string.digits
     special = string.punctuation
-    
     characters = letters 
     
     if numbers:
@@ -14,9 +13,9 @@ def generate_random_password(min_length, numbers=True, special_characters):
         characters += special
         
     password = " "
-    meets_condition = False
-    is_number = False
-    is_special = False
+    meets_condition = None
+    is_number = None
+    is_special = None
         
     while not meets_condition or (len(password) < min_length):
         new_chars = random.choice(characters)
