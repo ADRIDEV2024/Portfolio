@@ -12,7 +12,7 @@ def generate_random_password(min_length, numbers=True, special_characters):
     if special_characters:
         characters += special
         
-    password = " "
+    password = ""
     meets_condition = False
     is_number = False
     is_special = False
@@ -33,7 +33,7 @@ def generate_random_password(min_length, numbers=True, special_characters):
         if special_characters:
             meets_condition = meets_condition and is_special
             
-    return 
+    return password
 
 min_length = int(input("Enter the password minimum length: "))
 is_number = input("Do you want numbers(yes/no)?: ").lower()
