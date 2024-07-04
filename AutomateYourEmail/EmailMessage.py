@@ -13,8 +13,8 @@ subject = " Read this email please! Really important content!"
 body = "I need to say you something about last day, I am Adrian and I think..."
 
 email = EmailMessage()
-email["FROM"] = "adridev2024@gmail.com"
-email["TO"] =  "receiverperson@gmail.com"
+email[""] = "adridev2024@gmail.com"
+email[""] =  "receiverperson@gmail.com"
 email["Subject"] = subject
 email.set_content(body) # We define and save the email body using the Content Manager
 
