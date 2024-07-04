@@ -10,7 +10,7 @@ def generate_random_password(min_length, numbers=True, special_characters):
     if numbers:
         characters += digits
     if special_characters:
-        characters += special
+        characters = special
         
     password = ""
     meets_condition = False
@@ -19,7 +19,7 @@ def generate_random_password(min_length, numbers=True, special_characters):
         
     while not meets_condition or (len(password) < min_length):
         new_chars = random.choice(characters)
-        password += new_chars
+        password = password + new_chars
         
         if new_chars in digits:
             is_number = True
