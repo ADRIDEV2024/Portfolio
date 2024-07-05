@@ -30,8 +30,6 @@ def parse(text: str) -> str:
 
             current_word = re.sub(r"[^\w]", "", word)
 
-            print(current_word)
-
             words_count += 1
             letter_count += len(current_word)
 
@@ -42,10 +40,10 @@ def parse(text: str) -> str:
                 longest_word.clear()
                 longest_word.append(current_word)
 
-    print(f"Total number of words is : {words_count}\n")
-    print(f"The Average word length is: {letter_count // words_count}\n")
-    print(f"Number of sentences: {sentences_count}\n")
-    print(f"Longest word is: {longest_word}\n")
+    print(f"Total number of words is : {words_count}")
+    print(f"The Average word length is: {letter_count // words_count}")
+    print(f"Number of sentences: {sentences_count}")
+    print(f"Longest word is: {longest_word}")
     
 parse("This is a simple text for this practical exercise")
 
