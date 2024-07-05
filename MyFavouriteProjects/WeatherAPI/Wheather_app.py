@@ -1,7 +1,8 @@
 import tkinter as tk
-import requests as req
 from tkinter import messagebox
+from tkinter import Label, Entry
 from PIL import Image, ImageTk
+import requests as req
 import ttkbootstrap as ttkb
 from Apiconfig import apikey
 
@@ -10,43 +11,35 @@ root = ttkb.Window(themename="night")
 root.title("Weather app")
 root.geometry("400x400")
 
-
-
-def get_weather(city):
-    """""
-    Function to get weather info using OpenWeatherMap Api 
-    
-    """""
-    APIKEY = Apiconfig.apikey
-    URL = f"https://api.openweathermap.org/data/3.0/weather?q={city}&appid={APIKEY}"
-    req = req.get(URL)
-    
-    if req.status_code == 404:
-        messagebox.showerror("Not found")
+def fetch_weather_icon(icon_url):
+    try:
+        image = Image.open(req.get(icon_url, stream=True).raw)
+        return ImageTk.PhotoImage(image)
+    except Exception as e:
+        print(f"Error fetching weather icon: {e}")
         return None
 
-def search():
-    """""
-    Function to search weather for a city
-    using a get method  
+def update_ui(icon, temperature, description, city, country):
+    location_label.configure(text=f"{city}, {country}")
+
+    if icon:
+        icon_label.configure(image=icon)
+        icon_label.image = icon  # Keep a reference to avoid garbage collection
     
-    """""
+    temperature_lbl.configure(text=f"Temperature: {temperature:.2f}ºC")
+    description_label.configure(text=f"Description: {description}")
+
+def search():
+    """Function to search weather for a city using a get method"""
     city = city_entry.get()
     result = get_weather(city)
     if result is None:
         return 
-     # If the city is found, unpack the weather information
-    icon_url,temperature,description,city,country = result 
-    location_label.configure(text=f"{city},{country}")
     
-    image = Image.open(req.get(icon_url, stream=True).raw)
-    icon = ImageTk.PhotoImage(image)
-    icon_label.configure(image=icon)
-    icon_label.image = icon 
-    
-    temperature_lbl.configure(text=f"Temperature: {temperature:.2f}ºC")
-    description_label.configure(text=f"Description: {description}")
-    
+    icon_url, temperature, description, city, country = result
+    icon = fetch_weather_icon(icon_url)
+    update_ui(icon, temperature, description, city, country)
+
     
 # ENTRY WIDGET TO ENTER THE CITY NAME
 
