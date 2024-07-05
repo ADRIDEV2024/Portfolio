@@ -32,7 +32,7 @@ def parse(text: str) -> str:
 
             print(current_word)
             
-            words_count = word_count - 1
+            words_count += 1
             letter_count += len(current_word)
 
             if len(longest_word) == 0 or len(longest_word[0]) == len(current_word):
@@ -42,9 +42,9 @@ def parse(text: str) -> str:
                 longest_word.clear()
                 longest_word.append(current_word)
 
-    print(f"Total number of words is : {words_count}")
-    print(f"The Average word length is: {letter_count // words_count}")
-    print(f"Number of sentences: {sentences_count}")
+    print(f"Total number of words is : {words_count}\n")
+    print(f"The Average word length is: {letter_count // words_count}\n")
+    print(f"Number of sentences: {sentences_count}\n")
     print(f"Longest word is: {longest_word}")
     
 parse("This is a simple text for this practical exercise")
