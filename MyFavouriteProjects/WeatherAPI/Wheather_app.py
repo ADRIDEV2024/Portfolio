@@ -24,7 +24,7 @@ def update_ui(icon, temperature, description, city, country):
 
     if icon:
         icon_label.configure(image=icon)
-        icon_label.image = icon  # Keep a reference to avoid garbage collection
+        icon_label.image = icon 
     
     temperature_lbl.configure(text=f"Temperature: {temperature:.2f}ºC")
     description_label.configure(text=f"Description: {description}")
