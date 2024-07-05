@@ -30,7 +30,9 @@ def parse(text: str) -> str:
 
             current_word = re.sub(r"[^\w]", "", word)
 
-            words_count += 1
+            print(current_word)
+            
+            words_count = word_count - 1
             letter_count += len(current_word)
 
             if len(longest_word) == 0 or len(longest_word[0]) == len(current_word):
