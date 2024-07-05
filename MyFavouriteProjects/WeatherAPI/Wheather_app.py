@@ -12,6 +12,11 @@ root.title("Weather app")
 root.geometry("400x400")
 
 def fetch_weather_icon(icon_url):
+    """
+    Function to get and create the icon for the app
+
+    return: None
+    """
     try:
         image = Image.open(req.get(icon_url, stream=True).raw)
         return ImageTk.PhotoImage(image)
@@ -20,6 +25,7 @@ def fetch_weather_icon(icon_url):
         return None
 
 def update_ui(icon, temperature, description, city, country):
+    """Function to configure and update the user interface when needed"""
     location_label.configure(text=f"{city}, {country}")
 
     if icon:
