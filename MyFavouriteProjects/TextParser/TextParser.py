@@ -1,11 +1,3 @@
-"""
-Create a program that analizes text and get :
-
-- Total number of words
-- Longer word
-- Total number of sentences in that text
-- Average word length
-"""
 
 import re
 from typing import List, Tuple
