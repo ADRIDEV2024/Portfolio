@@ -24,7 +24,8 @@ class LoginForm(AuthenticationForm):
 class UserProfileForm(forms.ModelForm):
     class Meta:
         model = UserProfile
-        fields = ["full_name"]
+        fields = ["full_name", "lessons_completed","lessons_in_progress","favorite_languages"
+                  ,"languages_level","languages_learning"]
         
 class LessonsForm(forms.ModelForm):
     
@@ -32,9 +33,9 @@ class LessonsForm(forms.ModelForm):
         model = Lesson
         fields = ["title","content","language","lesson_tags","lesson_level","lesson_duration"]
 
-    title = forms.CharField(widget=forms.TextInput(
+    title = forms.TextField(widget=forms.TextInput(
         attrs={'placeholder': 'Enter the lesson title'}))
-    content = forms.CharField(widget=forms.Textarea(
+    content = forms.TextField(widget=forms.Textarea(
         attrs={'placeholder': 'Enter the lesson content'}))
     
     difficulty = forms.ChoiceField(choices=Lesson.difficulty_choices)
