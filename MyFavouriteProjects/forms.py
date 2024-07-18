@@ -42,16 +42,19 @@ class LessonsForm(forms.ModelForm):
     tags = forms.ModelMultipleChoiceField(queryset=LessonTag.objects.all(), widget=forms.CheckboxSelectMultiple)
     
 class LanguageForm(forms.ModelForm):
+    
      class Meta:
          model = UserLanguage
          fields = ["language","user"]
 
 class FavoriteLanguageForm(forms.ModelForm):
+    
     class Meta:
         model = Language
         fields = ['name']
 
 class LessonTagForm(forms.ModelForm):
+    
     class Meta:
         model = LessonTag
         fields = ['name']
