@@ -33,9 +33,9 @@ class LessonsForm(forms.ModelForm):
         model = Lesson
         fields = ["title","content","language","lesson_tags","lesson_level","lesson_duration"]
 
-    title = forms.TextField(widget=forms.TextInput(
+    title = forms.CharField(widget=forms.TextInput(
         attrs={'placeholder': 'Enter the lesson title'}))
-    content = forms.TextField(widget=forms.Textarea(
+    content = forms.CharField(widget=forms.TextInput(
         attrs={'placeholder': 'Enter the lesson content'}))
     
     difficulty = forms.ChoiceField(choices=Lesson.difficulty_choices)
