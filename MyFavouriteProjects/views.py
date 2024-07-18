@@ -10,7 +10,6 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.urls import reverse_lazy
 
 def index(request):
-
     return render(request, 'index.html')
 
 def dashboard(request):
@@ -43,6 +42,7 @@ def updateprofile(request):
         form = UserProfileForm(request.POST, instance=user_profile)
         if form.is_valid():
             form.save()
+            
     # Redirect to the index page after succesfull form submission
         return redirect("index")
     else:
