@@ -42,9 +42,9 @@ def updateprofile(request):
         form = UserProfileForm(request.POST, instance=user_profile)
         if form.is_valid():
             form.save()
-            
-    # Redirect to the index page after succesfull form submission
+        # Redirect to the index page after succesfull form submission
         return redirect("index")
+        
     else:
         form = UserProfileForm(instance=user_profile)
         context = {
