@@ -24,8 +24,7 @@ class LoginForm(AuthenticationForm):
 class UserProfileForm(forms.ModelForm):
     class Meta:
         model = UserProfile
-        fields = ["full_name","lessons_completed","lessons_in_progress","favorite_languages"
-                  ,"languages_level","languages_learning"]
+        fields = ["full_name"]
         
 class LessonsForm(forms.ModelForm):
     
