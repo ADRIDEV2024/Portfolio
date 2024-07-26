@@ -25,4 +25,5 @@ with smtplib.SMTP_SSL("smtpgmail.com", 8000, context=context) as smtp:
     smtp.login(email_sender, email_password)
     smtp.sendmail(email_sender, email_receiver, email.as_string())
 
-
+if __name__ == "__main__":
+    EmailMessage()
