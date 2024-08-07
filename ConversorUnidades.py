@@ -12,6 +12,7 @@ def display_conversions(conversions):
     print()
 
 def get_conversion_choice(conversions):
+    
     conversion = input("Enter the number of conversion to use: ")
     conversion_index = int(conversion) - 1
     return conversions[conversion_index]
@@ -31,6 +32,7 @@ def convert_value(conversion_number, from_value):
     return conversion_functions[conversion_number](from_value)
 
 def main():
+    
     conversions = [
         (1, "km", "mi"),
         (2, "mi", "km"),
