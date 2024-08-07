@@ -36,7 +36,9 @@ def track_dir(dir):
       
         while True:
             time.sleep(2)
+          
     except KeyboardInterrupt:
+      
         observer_handler.stop()
         observer_handler.join()
         
