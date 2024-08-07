@@ -18,8 +18,6 @@ class Filetracker(FileSystemHandler):
         
         logging.info(f"File created: {event.src_path}")
     
-    
-   
     def on_deleted(self, event):
         
         logging.info(f"File deleted: {event.src_path}")
