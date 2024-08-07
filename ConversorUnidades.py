@@ -5,7 +5,8 @@ def display_header():
     print()
 
 def display_conversions(conversions):
-    print("Conversions available:\n")
+    print("Conversions available: \n")
+    
     for conversion_number, from_unit, to_unit in conversions:
         print(f"{conversion_number}) {from_unit} -> {to_unit}")
     print()
