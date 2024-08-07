@@ -9,6 +9,7 @@ logging.basicConfig(level=logging.INFO,
                     datefmt="%Y-%m-%d %H:%M:%S")
 
 class Filetracker(FileSystemHandler):
+  
     def on_modified(self, event):
         
         logging.info(f"File modified: {event.src_path}")
@@ -40,6 +41,7 @@ def track_dir(dir):
         observer_handler.join()
         
 if __name__ == "__main__":
+  
     dir_to_track = r"C:\Users\EVO\Ajustes"
     track_dir(dir_to_track)
         
