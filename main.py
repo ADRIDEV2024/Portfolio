@@ -4,10 +4,10 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemHandler 
 
 
-logging.basicConfig(level=logging.INFO, format="%{asctime}s - %{message}s",
-                    datefmt="%Y-%m-%d %H:%M:%S")
+logging.basicConfig(level=logging.INFO, format="%{asctime}s - %{message}s", datefmt="%Y-%m-%d %H:%M:%S")
 
 class Filetracker(FileSystemHandler):
+  
     def on_modified(self, event):
         
         logging.info(f"File modified: {event.src_path}")
