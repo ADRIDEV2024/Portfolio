@@ -1,11 +1,10 @@
 import time
 import logging
 from watchdog.observers import Observer
-# from watchdog.events import FileSystemHandler 
+from watchdog.events import FileSystemHandler 
 
 
-logging.basicConfig(level=logging.INFO,
-                    format="%{asctime}s - %{message}s",
+logging.basicConfig(level=logging.INFO, format="%{asctime}s - %{message}s",
                     datefmt="%Y-%m-%d %H:%M:%S")
 
 class Filetracker(FileSystemHandler):
