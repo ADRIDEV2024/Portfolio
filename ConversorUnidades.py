@@ -57,4 +57,5 @@ def main():
 if __name__ == "__main__":
     display_header()
     display_conversions()
+    get_conversion_choice()
     main()
