@@ -54,5 +54,3 @@ def main():
     to_value = convert_value(conversion_number, from_value)
     print(f"{from_value}{from_unit} --> {to_value}{to_unit}")
 
-if __name__ == "__main__":
-    main()
