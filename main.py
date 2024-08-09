@@ -20,7 +20,7 @@ class Filetracker(FileSystemHandler):
    
     def on_deleted(self, event):
         
-        logging.info(f"File deleted: {event.src_path}")
+        logging.info(f"File deleted:{event.src_path}")
         
 def track_dir(dir):
     
@@ -34,7 +34,7 @@ def track_dir(dir):
     try:
       
         while True:
-            time.sleep(2)
+            time.sleep(4)
           
     except KeyboardInterrupt:
         observer_handler.stop()
