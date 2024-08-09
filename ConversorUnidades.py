@@ -55,5 +55,6 @@ def main():
     print(f"{from_value}{from_unit} --> {to_value}{to_unit}")
 
 if __name__ == "__main__":
+    display_header()
     display_conversions()
     main()
