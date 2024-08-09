@@ -1,7 +1,7 @@
 import time
 import logging
 from watchdog.observers import Observer
-from watchdog.events import FileSystemHandler 
+# from watchdog.events import FileSystemHandler 
 
 
 logging.basicConfig(level=logging.INFO,
