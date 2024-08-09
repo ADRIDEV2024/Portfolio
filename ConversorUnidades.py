@@ -22,7 +22,12 @@ def get_conversion_value(from_unit):
 
 def convert_value(conversion_number, from_value):
     conversion_functions = {
-       
+        1: lambda x: x * 0.62,
+        2: lambda x: x * 1.61,
+        3: lambda x: x * 0.45,
+        4: lambda x: x * 2.22,
+        5: lambda x: (x - 32) / 1.8,
+        6: lambda x: x * 1.8 + 32,
     }
     return conversion_functions[conversion_number](from_value)
 
