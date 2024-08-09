@@ -24,7 +24,7 @@ class Filetracker(FileSystemHandler):
         
 def track_dir(dir):
     
-    event_handler = Filetracker()
+    event_handler = FileSystemHandler()
     
     observer_handler = Observer()
     observer_handler.schedule(event_handler, dir, recursive=True)
