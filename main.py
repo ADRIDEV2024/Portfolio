@@ -32,13 +32,15 @@ def track_dir(dir):
     observer_handler.start()
     
     try:
+      
         while True:
             time.sleep(2)
+          
     except KeyboardInterrupt:
         observer_handler.stop()
         observer_handler.join()
         
 if __name__ == "__main__":
-    dir_to_track = r"C:\Users\EVO\Ajustes"
+    dir_to_track = r"C:\Users\EVO\Settings"
     track_dir(dir_to_track)
         
