@@ -4,7 +4,7 @@ def display_header():
     print("** UNIT CONVERTER **")
     print()
 
-def display_conversions():
+def display_conversions(conversions):
     print("Conversions available: \n")
     
     for conversion_number, from_unit, to_unit in conversions:
@@ -18,7 +18,7 @@ def get_conversion_choice(conversions):
     return conversions[conversion_index]
 
 def get_conversion_value(from_unit):
-    return float(input(f"Enter {from_unit} --> " "))
+    return float(input(f"Enter {from_unit} --> "))
 
 def convert_value(conversion_number, from_value):
     conversion_functions = {
@@ -39,6 +39,8 @@ def main():
         (3, "kg", "lbs"),
         (4, "lbs", "kg"),
         (5, "ºF", "ºC"),
+        (6, "ºC", "ºF"),
+        (6, "ºC", "ºF"),
         (6, "ºC", "ºF"),
     ]
     
