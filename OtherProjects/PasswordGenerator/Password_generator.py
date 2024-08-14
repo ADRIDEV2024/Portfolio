@@ -13,8 +13,8 @@ def generate_random_password(min_length, numbers=True, special_characters):
         characters += special
         
     password = ""
-    meets_condition = False
-    is_number = False
+    meets_condition = None
+    is_number = True
     is_special = False
         
     while not meets_condition or (len(password) < min_length):
