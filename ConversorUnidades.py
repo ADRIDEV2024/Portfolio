@@ -4,7 +4,7 @@ def display_header():
     print("** UNIT CONVERTER **")
     print()
 
-def display_conversions(conversions):
+def display_conversions():
     print("Conversions available: \n")
     
     for conversion_number, from_unit, to_unit in conversions:
