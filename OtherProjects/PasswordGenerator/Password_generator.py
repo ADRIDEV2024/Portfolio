@@ -13,8 +13,8 @@ def generate_random_password(min_length, numbers=True, special_characters):
         characters += special
         
     password = ""
-    meets_condition = None
-    is_number = True
+    meets_condition = False
+    is_number = False
     is_special = False
         
     while not meets_condition or (len(password) < min_length):
@@ -35,9 +35,9 @@ def generate_random_password(min_length, numbers=True, special_characters):
             
     return password
 
-min_length = int(input("Enter the password minimum length: "))
-is_number = input("Do you want numbers(yes/no)?: ").lower()
-is_special = input("Do you want special characters(yes/no)?: ").lower()
+#min_length = int(input("Enter the password minimum length: "))
+#is_number = input("Do you want numbers(yes/no)?: ").lower()
+#is_special = input("Do you want special characters(yes/no)?: ").lower()
 
 password = generate_random_password(min_length, is_number, is_special)
 print(password)
