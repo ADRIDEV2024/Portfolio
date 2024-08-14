@@ -40,8 +40,6 @@ def main():
         (4, "lbs", "kg"),
         (5, "ºF", "ºC"),
         (6, "ºC", "ºF"),
-        (6, "ºC", "ºF"),
-        (6, "ºC", "ºF"),
     ]
     
     display_header()
@@ -57,5 +55,4 @@ def main():
     print(f"{from_value}{from_unit} --> {to_value}{to_unit}")
 
 if __name__ == "__main__":
-    display_header()
     main()
