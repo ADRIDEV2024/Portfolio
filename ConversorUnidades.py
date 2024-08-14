@@ -18,7 +18,7 @@ def get_conversion_choice(conversions):
     return conversions[conversion_index]
 
 def get_conversion_value(from_unit):
-    return float(input(f"Enter {from_unit} --> "))
+    return float(input(f"Enter {from_unit} --> " "))
 
 def convert_value(conversion_number, from_value):
     conversion_functions = {
