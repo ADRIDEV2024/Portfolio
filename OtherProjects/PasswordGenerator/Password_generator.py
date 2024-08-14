@@ -35,9 +35,9 @@ def generate_random_password(min_length, numbers=True, special_characters):
             
     return password
 
-#min_length = int(input("Enter the password minimum length: "))
-#is_number = input("Do you want numbers(yes/no)?: ").lower()
-#is_special = input("Do you want special characters(yes/no)?: ").lower()
+min_length = int(input("Enter the password minimum length: "))
+is_number = input("Do you want numbers(yes/no)?: ").lower()
+is_special = input("Do you want special characters(yes/no)?: ").lower()
 
 password = generate_random_password(min_length, is_number, is_special)
 print(password)
